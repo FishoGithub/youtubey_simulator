@@ -77,7 +77,7 @@ if cheese == 'y':
         print('\ncongratulations on making your first video! you can now buy a headset with your ' + str(subs) + ' subscribers!')
         cheese = input('\npress s to got to the shop ')
         if cheese == 's':
-          print('\nshop white = "\033[0;37m"\n\n\nGEAR\ngaming headset\ncost:1 video and 1 subscribers\nbenifits +1 subscriber gain to videos\n\n\ngaming tablet\ncost: 10 videos and 30 subscribers\nbenifits +1 views from better quality +2 subs\n\n\nOP gaming thumbnails\ncost 20 videos and 80 subscribers\nbenifits +10 subscriber gain to videos and + 50 views')
+          print('\nshop white = "\033[0;37m"\n\n\nGEAR\ngaming headset\ncost:1 video and 1 subscribers\nbenifits +1 subscriber gain to videos\n\n\ngaming tablet\ncost: 10 videos and 30 subscribers\nbenifits +1 views from better quality +2 subs\n\n\nOP gaming thumbnails\ncost 20 videos and 80 subscribers\nbenifits +10 subscriber gain to videos and + 50 views\n\n\ngaming computer\n cost 40 videos and and 140 subscribers\nbenifits +15 subscibers +10 watchtime +100 views')
            
 
 
