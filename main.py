@@ -1,5 +1,15 @@
 import random
 
+green = "\033[0;32m"
+red = "\033[0;31m"
+yellow = "\033[0;33m"
+blue = "\033[0;34m"
+magenta = "\033[0;35m"
+cyan = "\033[0;36m"
+white = "\033[0;37m"
+bright_cyan = "\033[0;96m"
+bright_blue = "\033[0;94m"
+
 subs = 0
 subs_per_video = random.randint(0, 5)
 video_total = 0
@@ -63,6 +73,17 @@ if cheese == 'y':
   if cheese == 'start':
     while True:
       game_start()
+      if video_total == 1:
+        print('\ncongratulations on making your first video! you can now buy a headset with your ' + str(subs) + ' subscribers!')
+        cheese = input('\npress s to got to the shop ')
+        if cheese == 's':
+          print('\nyou can buy:\nheadset')
+          cheese = input('\npress b to buy ')
+          if cheese == 'b':
+            print('\n\nyou bought a headset!')
+
+
+
 
 
     
