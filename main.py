@@ -1,22 +1,21 @@
 import random
 
-start_subs = ''
-subs = ''
-
-def start_subs():
-  global start_subs
-  global subs
-
-  start_subs = random.randint(1, 100)
-  start_subs = subs
+subs = 0
+subs_per_video = random.randint(0, 500)
 
 def display_subs():
-  global start_subs
   global subs
 
   print('\nsubs: ' + str(subs))
 
+def video():
+  global subs
+  global subs_per_video
 
+  print('you made a video.')
+  print('\nyou got ' + str(subs_per_video) + ' from that video!')
+  subs = subs + subs_per_video
+  print('\nyou now have ' + str(subs) + ' subscribers!')
 
 cheese = input('welcome to youtubey simulator would you like to start y/n?')
 
@@ -26,22 +25,29 @@ if cheese == 'n':
 if cheese == 'y': 
   cheese = input('\nso you became a youtubey person youll start of with RANDOM youtubey subs. gain subs by obtaining plushies, gear, promotion softwares, and by making videos Enjoy your experince!!!!! TYPE START TO PLAY')
 
-  def genre():
+  def game_start():
     global cheese
 
     cheese = input('\npick your genre\ngaming\nvlogs\nmusic\nbeauty')
     if cheese == 'gaming':
       print('you picked gaming')
       display_subs()
+      cheese = input('press v to make a video ')
+      if cheese == 'v':
+        video()
     elif cheese == 'vlogs':
-      print('')
+      print('you picked vlogs')
+      display_subs()
     elif cheese == 'music':
-      print('')
+      print('you picked music')
+      display_subs()
     elif cheese == 'beauty':
-      print('')
+      print('you picked beauty')
+      display_subs()
 
   if cheese == 'start':
-    genre()
+    while True:
+      game_start()
 
 
     
