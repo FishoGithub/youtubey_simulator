@@ -1,7 +1,8 @@
 import random
 
 subs = 0
-subs_per_video = random.randint(0, 500)
+subs_per_video = random.randint(0, 5)
+video_total = 0
 
 def display_subs():
   global subs
@@ -11,11 +12,15 @@ def display_subs():
 def video():
   global subs
   global subs_per_video
+  global video_total
 
   print('you made a video.')
+  video_total += 1
+  subs_per_video = random.randint(0, 5)
   print('\nyou got ' + str(subs_per_video) + ' from that video!')
   subs = subs + subs_per_video
   print('\nyou now have ' + str(subs) + ' subscribers!')
+  print('\nyou have made ' + str(video_total) + ' total videos!')
 
 cheese = input('welcome to youtubey simulator would you like to start y/n?')
 
