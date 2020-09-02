@@ -38,35 +38,35 @@ if cheese == 'n':
   print('\nyou didnt accept your offer of becoming a popular youtubey person. and didnt go BRRRRRRRRRRRRRRRRRRRRRRRR Big sad boii times R.I.P ')
 
 if cheese == 'y': 
-  cheese = input('\nso you became a youtubey person youll start of with RANDOM youtubey subs. gain subs by obtaining plushies, gear, promotion softwares, and by making videos Enjoy your experince!!!!! TYPE START TO PLAY')
+  cheese = input(red + '\nso you became a youtubey person youll start of with RANDOM youtubey subs. gain subs by obtaining plushies, gear, promotion softwares, and by making videos Enjoy your experince!!!!! TYPE START TO PLAY')
 
   def game_start():
     global cheese
 
-    cheese = input('\npick your genre\ngaming\nvlogs\nmusic\nbeauty')
+    cheese = input(bright_blue + '\npick your genre\ngaming\nvlogs\nmusic\nbeauty')
     if cheese == 'gaming':
       print('you picked gaming')
       display_subs()
-      cheese = input('press v to make a video ')
+      cheese = input(green + 'press v to make a video ')
       if cheese == 'v':
         video()
     elif cheese == 'vlogs':
       print('you picked vlogs')
       display_subs() 
-      cheese = input('press v to make a video ')
+      cheese = input(green + 'press v to make a video ')
       if cheese == 'v':
         video()
   
     elif cheese == 'music':
       print('you picked music')
       display_subs()
-      cheese = input('press v to make a video ')
+      cheese = input(green + 'press v to make a video ')
       if cheese == 'v':
         video()
     elif cheese == 'beauty':
       print('you picked beauty')
       display_subs()
-      cheese = input('press v to make a video ')
+      cheese = input(green + 'press v to make a video ')
       if cheese == 'v':
         video()
 
@@ -77,10 +77,8 @@ if cheese == 'y':
         print('\ncongratulations on making your first video! you can now buy a headset with your ' + str(subs) + ' subscribers!')
         cheese = input('\npress s to got to the shop ')
         if cheese == 's':
-          print('\nyou can buy:\nheadset')
-          cheese = input('\npress b to buy ')
-          if cheese == 'b':
-            print('\n\nyou bought a headset!')
+          print('\nshop white = "\033[0;37m"\n\n\nGEAR\ngaming headset\ncost:1 video and 1 subscribers\nbenifits +1 subscriber gain to videos\n\n\ngaming tablet\ncost: 10 videos and 30 subscribers\nbenifits +1 views from better quality +2 subs\n\n\nOP gaming thumbnails\ncost 20 videos and 80 subscribers\nbenifits +10 subscriber gain to videos and + 50 views')
+           
 
 
 
