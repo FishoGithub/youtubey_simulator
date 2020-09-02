@@ -37,13 +37,23 @@ if cheese == 'y':
         video()
     elif cheese == 'vlogs':
       print('you picked vlogs')
-      display_subs()
+      display_subs() 
+      cheese = input('press v to make a video ')
+      if cheese == 'v':
+        video()
+  
     elif cheese == 'music':
       print('you picked music')
       display_subs()
+      cheese = input('press v to make a video ')
+      if cheese == 'v':
+        video()
     elif cheese == 'beauty':
       print('you picked beauty')
       display_subs()
+      cheese = input('press v to make a video ')
+      if cheese == 'v':
+        video()
 
   if cheese == 'start':
     while True:
